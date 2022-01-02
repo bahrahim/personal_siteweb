@@ -1,0 +1,62 @@
+$principalColors: #0a0a0a;
+$auSurvol: #047bc0;
+$police:#F0EFF4;
+$icones :#D64933;
+$icones : #DA4167;
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    .left {
+        padding-top: 200px;
+        padding-left: 3rem;
+        width: 50%;
+        height: 50%;
+    }
+
+    img {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+       
+    }
+
+    .right {
+        height: 50%;
+        width: 50%;
+        padding-right: 3rem;
+        align-content: space-between;
+        line-height: normal;
+        text-align: center;
+
+        h2 {
+            line-height: 3rem;
+            text-align: center;
+        }
+        h3{
+            line-height: 1.5rem;
+        }
+        p {
+            line-height: 1.5rem;
+            padding-bottom: 3rem;
+        }
+
+
+        .btn{
+            border: 2px solid $icones;
+            padding: 10px 30px;
+            color: $police;
+            border-radius: 3px;
+            background: $icones;
+            text-decoration: none;
+        }
+
+        .btn:hover{
+            background: $auSurvol;
+            color: $principalColors;
+        }
+
+    }
+}

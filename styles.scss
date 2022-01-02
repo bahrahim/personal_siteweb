@@ -1,0 +1,80 @@
+*, ::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+
+}
+
+$principalColors: #0a0a0a;
+$auSurvol: #047bc0;
+$police:#F0EFF4;
+$icones :#D64933;
+$icones : #DA4167;
+
+
+body{
+    color: $police;
+    background: $principalColors;
+
+
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        z-index: 1000;
+        align-items: flex-end;
+        
+        
+    
+        a {
+            padding: 2rem;
+            font-size: 2rem;
+            color: $police;
+            flex: 1;
+            
+    
+            &:hover {
+                background: $auSurvol;
+                color: $icones;
+                padding-bottom: 4rem;
+            }
+            
+        }
+    
+        i {
+            padding-right: 0.5rem;
+            color: $icones;
+        }
+    
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 568px) {
+    main{
+        flex-direction: column;
+        margin: 0;
+}
+    .left, .right{
+        width: 100%;
+    }
+    .btn{
+        right: 40px;
+    }
+    .container{
+        width: 100%;
+        margin: inherit;
+        flex-direction: column;
+    }
+}
